@@ -8,10 +8,11 @@ function findAncestor (el, cls) {
 
 function modifyTxt (e) {
 
-  console.log(e.target);
+//  console.log(e.target);
 
   var ele = document.getElementsByTagName("p");
 
+  console.log(anc);
  // var r1 = sent('Cats are stupid.');
  // console.log(r1);
 
@@ -20,25 +21,32 @@ function modifyTxt (e) {
   for (var i = 0;i<ele.length;i++){
 
     var line = ele[i].innerHTML;
+    var anc = findAncestor(ele[i],"userContentWrapper");
     var pol = sent(line);
+
+
 //    console.log(line);
 //    console.log(pol);
-    if (pol.score>0){
+ 
+    if (anc!=null){
 
-      ele[i].style.color = "#3c763d";
-    	ele[i].style.backgroundColor = "#dff0d8";
-    }
-    else if (pol.score<0){
-      ele[i].style.color = "#a94442";
-      ele[i].style.backgroundColor = "#f2dede";
+      if (pol.score>0){
 
-    }
+        ele[i].style.color = "#3c763d";
+        anc.style.backgroundColor = "#dff0d8";
+      }
+      else if (pol.score<0){
+        ele[i].style.color = "#a94442";
+        anc.style.backgroundColor = "#f2dede";
 
-    else{
+      }
 
-      ele[i].style.color = "#31708f";
-      ele[i].style.backgroundColor = "#d9edf7";
+      else{
 
+        ele[i].style.color = "#31708f";
+        anc.style.backgroundColor = "#d9edf7";
+
+      }
     }
 
   }
