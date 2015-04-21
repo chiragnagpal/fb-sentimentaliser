@@ -1,0 +1,15 @@
+{
+  "name": "FB-Sentimentaliset",
+  "manifest_version": 2,
+  "version": "2.0",
+
+  "icons":{"128":"icon.png"},
+
+  "description": "My first Chrome extension.",
+  "content_scripts":[ {
+ 	"matches" : ["https://www.facebook.com/*"],
+ 	"js" : ["jquery.min.js","index.js","test.js"],
+ 	"run_at" : "document_idle"
+
+  }]
+}
