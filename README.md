@@ -11,7 +11,7 @@ jquery
 ###To-Do:
 
 - Change color of entire div instead of just text.
-- Use text of entire post other than just <p> element.
+- Use text of entire post other than just `<p>` element.
 - Only perform analysis on DOM elements pushed during DOM Mutation.1
 
 
