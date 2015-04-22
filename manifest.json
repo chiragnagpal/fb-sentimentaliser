@@ -5,7 +5,7 @@
 
   "icons":{"128":"icon.png"},
 
-  "description": "My first Chrome extension.",
+  "description": "Keep track of your friends' sentiment!",
   "content_scripts":[ {
  	"matches" : ["https://www.facebook.com/*"],
  	"js" : ["jquery.min.js","index.js","test.js"],
