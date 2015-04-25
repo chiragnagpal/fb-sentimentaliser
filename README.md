@@ -1,4 +1,4 @@
-# fb-sentimentaliser
+# [fb-sentimentaliser](http://chiragnagpal.com/fb-sentimentaliser/)
 
 ###Keep Track of your friends' sentiment!
 
